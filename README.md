@@ -1,44 +1,36 @@
 # TDA_Facial_Expression_Recognition
 Supplement for Odyssey Programme - Topological Data Analysis for Facial Expression Recognition
 
+Acknowledgements:
+----
+
+- This is the supplement for my summer research program with the topic "Topological Data Analysis for Facial Expression Recognition"
+
+- I would like to extend my gratitude for NTU SPMS, the Odyssey Programme for this wonderful experience, Prof Xia and Mr Wee for their guidance.
+
+- The following picture is my research poster for this program
+
+
+![image](https://github.com/Yuhan0524/TDA_Facial_Expression_Recognition/blob/master/poster.jpg)
+
+
+Abstract
+----
+- We introduce 2 ways of using Topological Data Analysis(TDA) to generate topological features of 7 different facial expressions including angry, disgust, fear, happy, neutral, sad, and surprise. 
+
+- We apply the TDA methods to JAFFE and FER2013 datasets and try to conduct a dimensionality reduction of features for machine learning through TDA. 
+
+Motivation
+----
+- I did a presentation about PCA and eigenface for face recognition during last semster, so I'm quite interested in Computer Vision. 
+  When considering for the project topic of Odyssey, I thought of CV topics directly.
+  Because human face have topological features, TDA may be appliable for getting features.(Actually the result for my project is not good - I think some adjustment can be done - more than what I can handle currently anyway QAQ)
+
+- With the impression of two references, I have some ideas for this project topic
+  - https://github.com/Yuhan0524/TDA_Facial_Expression_Recognition/blob/master/References/TDA-FER-Visualization.pdf [1] A. Garin and G. Tauzin, "A Topological "Reading" Lesson: Classification of MNIST using TDA," 2019 18th IEEE International Conference On Machine Learning And Applications (ICMLA), 2019, pp. 1551-1556, doi: 10.1109/ICMLA.2019.00256.
+  - https://github.com/Yuhan0524/TDA_Facial_Expression_Recognition/blob/master/References/TDA-MNIST.pdf [2] H. Elhamdadi, S. Canavan and P. Rosen, "AffectiveTDA: Using Topological Data Analysis to Improve Analysis and Explainability in Affective Computing," in IEEE Transactions on Visualization and Computer Graphics, vol. 28, no. 1, pp. 769-779, Jan. 2022, doi: 10.1109/TVCG.2021.3114784.
+  
+  
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-# TDA-Facial-Emotion-Recognition---Machine-Learning
-
-发现BUG，监修中，勿用！
-
-jaffe为本项目的数据集 （由@极市平台 在知乎上提供的资源 https://zhuanlan.zhihu.com/p/31378836）
-
-The Japanese Female Facial Expression (JAFFE) Database
-
-链接:https://pan.baidu.com/s/1jnxDAGe9UBM3gj_rR2mrvA  密码:ixtu
-
-The database contains 213 images of 7 facial expressions (6 basic facial expressions + 1 neutral) posed by 10 Japanese female models. 
-Each image has been rated on 6 emotion adjectives by 60 Japanese subjects. 
-The database was planned and assembled by Michael Lyons, Miyuki Kamachi, and Jiro Gyoba. We thank Reiko Kubota for her help as a research assistant.
-The photos were taken at the Psychology Department in Kyushu University.
-
-该数据库是由10位日本女性在实验环境下根据指示做出各种表情，再由照相机拍摄获取的人脸表情图像。
-整个数据库一共有213张图像，10个人，全部都是女性，每个人做出7种表情，这7种表情分别是： sad, happy, angry, disgust, surprise, fear, neutral. 
-每个人为一组，每一组都含有7种表情，每种表情大概有3,4张样图。
-</br>
-
-使用说明：
-
-1. 通过 face_landmark_success 程序读取图片并提取出人脸的81或68个特征点
-
-2. 通过 获得数据集-bottleneck 程序获得ML所需的数据集，包括了60 * 15的数据（有时间我将把其扩展至180 * 15），Bottleneck Distance的基准数据为每个数据集中的“neutral face”
-
-3. 通过 决策树+KNN-ML 程序使用决策树算法进行测试，准确率接近100%（更：发现为BUG），但KNN算法准确率极低（仍在探索中。。。）

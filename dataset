@@ -1,0 +1,13 @@
+***DATASET - PLZ refer to https://entuedu-my.sharepoint.com/:u:/g/personal/peng0142_e_ntu_edu_sg/Ef-PoETjPvNKlzM11BHLlCUBotqggYum_7ADNY1OMTNUyQ?e=CEXMbF
+
+Containing: 
+
+-JAFFE dataset 
+  (The database contains 213 images of 7 facial expressions (6 basic facial expressions + 1 neutral) posed by 10 Japanese female models. Each image has been rated on 6 emotion adjectives by 60 Japanese subjects. The database was planned and assembled by Michael Lyons, Miyuki Kamachi, and Jiro Gyoba. We thank Reiko Kubota for her help as a research assistant.
+  The photos were taken at the Psychology Department in Kyushu University.)
+
+-FER2013 dataset .csv 
+  (Kaggle Competition https://www.kaggle.com/datasets/ashishpatel26/facial-expression-recognitionferchallenge)
+
+-All Train and Private test images in FER2013, I change them from pixels to images 
+  (*Note: 0-13505 png, 13506-13963 jpg, 13964-14460 jpeg, 14461- png)
